@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Arimo", sans-serif;
+}
+
+:root {
+  --mainColor: #29335c;
+  --navColor: white;
+  --mainColorLight: #5767aa;
+  --secondaryColor: #db2b39;
+  --textColor: #eee;
+  --textColorTwo: black;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 2rem;
+  background-color: var(--navColor);
+  color: var(--textColor);
+  padding-top: 5px;
+  margin-left: 5rem;
+}
+
+/* Logo styling */
+header img {
+  margin: 0 10rem;
+  height: 120%;
+  margin-left: 10rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+/* Accountant Services Text */
+.search-text {
+  margin: 0 2rem;
+  color: var(--textColorTwo);
+  text-decoration: none;
+  padding-top: 1rem;
+  padding-right: 61rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0;
+  margin-left: 0;
+  padding-left: 0;
+  margin-top: 0;
+  padding-top: 0;
+}
+.search-text h5 {
+  padding-right: 0rem;
+  margin-right: 0;
+  margin-bottom: 3rem;
+  margin-top: 10rem;
+}
+
+.logo-text {
+  margin-top: 1rem;
+  margin-right: 25rem;
+  margin-left: 0;
+  padding-left: 0;
+  color: var(--textColorTwo);
+}
+.logo-image {
+  margin-right: 0;
+  padding-right: 0;
+}
+nav a {
+  margin: 0 2rem;
+  color: var(--textColorTwo);
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+header .nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--textColorTwo);
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+}
+.sign-in-btn {
+  background-color: #29335c;
+  top: 50%;
+  color: var(--navColor);
+  min-height: 30px;
+  min-width: 120px;
+  padding: 10px;
+}
+
+/* SearchBar component Styling */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.search-bar {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+header h5 {
+  color: var(--textColorTwo);
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 200px;
+  margin-right: 58%;
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 480px;
+  margin-bottom: 16px;
+  padding: auto;
+
+  margin-right: 53%;
+}
+.search-box input {
+  display: block;
+  appearance: none;
+  outline: none;
+
+  padding: 16px;
+  width: 100%;
+}
+
+/* .search-box:focus-within {
+  border-bottom: #11124b;
+} */
+
+.results {
+  max-width: 768px;
+  margin: 0 auto;
+  margin-top: 20rem;
+  margin-right: 54rem;
+}
+
+.result {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 16px;
+  background-color: white;
+  border-radius: 16px;
+}
+/* 
+.result:hover {
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+} */
+
+.result h3 {
+  /* This is for the results title */
+  color: black;
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.result p {
+  /* This is for the results paragraph/description */
+  color: #313131;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.result a {
+  /* This is for the "read more" button  */
+  display: inline-block;
+  padding: 12px 14px;
+  background-color: #29335c;
+  color: #fff;
+  font-weight: 400;
+  text-decoration: none;
+  border-radius: 0px;
+}
+
+.result p .searchmatch {
+  font-weight: 700;
+}
+
+.result a:hover {
+  /* This is for the results "read more" button animation when someone hovers on it*/
+  background-color: #11124b;
+}
+
+/* End of SearchBar component Styling */
+
+/* - START - Macbook pro size screen */
+
+@media only screen and (max-width: 1600px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    background-color: var(--navColor);
+    color: var(--textColor);
+    padding-top: 5px;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Logo styling */
+  header img {
+    margin: 0 10rem;
+    height: 120%;
+    margin-left: 10rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+
+  /* Accountant Services Text */
+  .search-text {
+    color: var(--textColorTwo);
+    text-decoration: none;
+    padding-top: 1rem;
+    padding-right: 52rem;
+    padding-bottom: 1rem;
+    padding-left: 0;
+    margin-left: 4rem;
+    padding-left: 0;
+    margin-top: 0;
+    padding-top: 0;
+    margin-left: 2rem;
+  }
+  .search-text h5 {
+    padding-right: 0rem;
+    margin-bottom: 3rem;
+    margin-top: 8rem;
+  }
+
+  .logo-text {
+    margin-top: 1rem;
+    margin-right: 10rem;
+    margin-left: 0;
+    padding-left: 0;
+    color: var(--textColorTwo);
+    margin-left: 0rem;
+  }
+  .logo-image {
+    margin-right: 0;
+    padding-right: 0;
+    margin-left: 6rem;
+    margin-right: 0;
+  }
+  nav a {
+    margin: 0 2rem;
+    color: var(--textColorTwo);
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  header .nav-btn {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--textColorTwo);
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.8rem;
+  }
+  .sign-in-btn {
+    background-color: #29335c;
+    top: 50%;
+    color: var(--navColor);
+    min-height: 30px;
+    min-width: 120px;
+    padding: 10px;
+  }
+
+  /* SearchBar component Styling */
+  .App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .results {
+    max-width: 768px;
+    margin: 0 auto;
+    margin-top: 20rem;
+    margin-right: 54rem;
+    margin-left: 5rem;
+  }
+}
+
+/* - END - Macbook pro size screen */
+
+@media only screen and (max-width: 1024px) {
+  header .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--navColor);
+    transition: 1;
+    transform: translateY(-100vh);
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  header .responsive_nav {
+    transform: none;
+  }
+
+  nav .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+  }
+
+  /* Logo styling */
+  header img {
+    margin: 0 10rem;
+    height: 120%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  /* Accountant Services Text */
+  header h4 {
+    margin: 0 2rem;
+    color: var(--textColorTwo);
+    text-decoration: none;
+    padding-top: 1rem;
+    padding-right: 6rem;
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
